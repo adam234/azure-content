@@ -65,14 +65,14 @@ Three rules of thumb to keep in mind when building a threat model:
 
 #### Threats
 
-The four core elements of a threat model are:
+Data flow diagrams are often useful in threat modeling.  The four core elements of a dataflow diagram are:
 
 - Processes (web services, Win32 services, *nix daemons, etc. Note that some complex entities (e.g. field gateways and sensors) can be abstracted as a process when a technical drill down in these areas is not possible.
 - Data stores (anywhere data is stored, such as a configuration file or database)
 - Data flow (where data moves between other elements in the application)
 - External Entities (anything that interacts with the system, but is not under the control of the application, examples include users and satellite feeds)
 
-All elements in the architectural diagram are subject to various threats; we will use the STRIDE mnemonic. Read [Threat Modeling Again, STRIDE](https://blogs.msdn.microsoft.com/larryosterman/2007/09/04/threat-modeling-again-stride/) to know more about the STRIDE elements.
+All elements in the architectural diagram are subject to various threats; we will use the STRIDE mnemonic. Read [Threat Modeling Again, STRIDE](https://blogs.msdn.microsoft.com/larryosterman/2007/09/04/threat-modeling-again-stride/) or ["Threats to our products"](https://blogs.microsoft.com/cybertrust/2009/08/27/the-threats-to-our-products/) to know more about the STRIDE elements.
 
 Different elements of the application diagram are subject to certain STRIDE threats:
 
